@@ -1,5 +1,6 @@
 Given(/^I can open the app$/) do
   mainpage.main_page_displayed?
+  mainpage.click_more_options
 end
 
 When(/^click on budget$/) do
