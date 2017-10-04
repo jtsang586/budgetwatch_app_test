@@ -12,8 +12,8 @@ class TransactionsPage
     @driver = driver
   end
 
-  def transactions_page_is_displayed?
-    @driver.find_elements(:class, TRANSACTIONS_HEADING_CLASS)[1]
+  def transactions_page_is_displayed
+    @driver.find_element(:class, TRANSACTIONS_HEADING_CLASS).text
   end
 
   def view_expenses

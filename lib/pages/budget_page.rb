@@ -13,6 +13,10 @@ class BudgetPage
     @driver.find_elements(:id, BUDGET_NAME_ID)
   end
 
+  def click_first_budget
+    @driver.find_element(:id, BUDGET_NAME_ID).click
+  end
+
   def set_dates
     @driver.find_element(:id, SET_DATE_ID).click
   end

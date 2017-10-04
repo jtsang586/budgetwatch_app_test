@@ -15,6 +15,7 @@ module BudgetApp
 
   def addbudgetpage
     AddBudgetPage.new($driver)
+  end
 
   def transactionspage
     TransactionsPage.new($driver)
