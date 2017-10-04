@@ -1,17 +1,22 @@
 class BudgetPage
 
-  SET_DATES_AND_ADD_BUDGET_CLASS = 'android.widget.TextView'
+  ADD_ID = 'protect.budgetwatch:id/action_add'
+  SET_DATE_ID = 'protect.budgetwatch:id/action_calendar'
 
   def initialize(driver)
     @driver = driver
   end
 
   def set_dates
-    @driver.find_elements(:class, SET_DATES_AND_ADD_BUDGET_CLASS)[0].click
+    @driver.find_element(:id, SET_DATE_ID).click
   end
 
   def add_budget
-    @driver.find_elements(:class, SET_DATES_AND_ADD_BUDGET_CLASS)[1].click
+    @driver.find_element(:id, ADD_ID).click
+  end
+
+  def budget_page_displayed?
+    @driver.find_element(:id, ADD_ID)
   end
 
 end

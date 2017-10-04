@@ -1,5 +1,6 @@
 require_relative 'pages/main_page'
 require_relative 'pages/budget_page'
+require_relative 'pages/add_budget_page'
 
 module BudgetApp
 
@@ -9,6 +10,10 @@ module BudgetApp
 
   def budgetpage
     BudgetPage.new($driver)
+  end
+
+  def addbudgetpage
+    AddBudgetPage.new($driver)
   end
 
 end

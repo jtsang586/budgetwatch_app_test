@@ -4,7 +4,8 @@ class MainPage
   IMPORT_EXPORT_ID = 'protect.budgetwatch:id/action_import_export'
   MORE_OPTIONS_CLASS = 'android.widget.ImageView'
   ABOUT_ID = 'protect.budgetwatch:id/title'
-  BUDGET_AND_TRANSACTION_CLASS = 'android.widget.LinearLayout'
+  BUDGET_AND_TRANSACTION_ID = 'protect.budgetwatch:id/menu'
+
 
   def initialize(driver)
     @driver = driver
@@ -31,11 +32,11 @@ class MainPage
   end
 
   def view_budgets
-    @driver.find_elements(:class, BUDGET_AND_TRANSACTION_CLASS)[0].click
+    @driver.find_elements(:id, BUDGET_AND_TRANSACTION_ID)[0].click
   end
 
   def view_transactions
-    @driver.find_elements(:class, BUDGET_AND_TRANSACTION_CLASS)[1].click
+    @driver.find_elements(:id, BUDGET_AND_TRANSACTION_ID)[1].click
   end
-  
+
 end

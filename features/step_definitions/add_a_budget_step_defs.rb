@@ -7,15 +7,18 @@ When(/^I click on budget$/) do
 end
 
 Then(/^the budget page opens$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  budgetpage.budget_page_displayed?
 end
 
 When(/^I enter a budget$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  mainpage.view_budgets
+  budgetpage.add_budget
+  addbudgetpage.input_name('Test 1')
+  addbudgetpage.input_value(1000)
 end
 
 And(/^save the budget$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  addbudgetpage.save_budget
 end
 
 Then(/^the budget is saved$/) do
