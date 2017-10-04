@@ -5,7 +5,7 @@ class MainPage
   MORE_OPTIONS_CLASS = 'android.widget.ImageView'
   ABOUT_ID = 'protect.budgetwatch:id/title'
   BUDGET_AND_TRANSACTION_ID = 'protect.budgetwatch:id/menu'
-
+  
   def initialize(driver)
     @driver = driver
   end
