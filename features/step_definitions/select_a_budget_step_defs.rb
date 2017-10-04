@@ -1,15 +1,15 @@
-Given(/^I have the app open$/) do
+Given(/^I am on the budget page$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-And(/^I am on the main page$/) do
+And(/^A budget is displayed$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-When(/^I click on budgets$/) do
+When(/^I click on the budget$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Then(/^My budgets are displayed$/) do
+Then(/^I am taken to the transaction page$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
