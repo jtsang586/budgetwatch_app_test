@@ -11,4 +11,3 @@ Feature: I am able to add a budget
     When I enter a budget
     And save the budget
     Then the budget is saved
-    And can be seen on the homepage

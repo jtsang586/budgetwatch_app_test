@@ -22,9 +22,6 @@ And(/^save the budget$/) do
 end
 
 Then(/^the budget is saved$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-And(/^can be seen on the homepage$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(budgetpage.get_budget_name).to eql 'Test 1'
+  expect(budgetpage.get_budget_value).to eql "0/1000"
 end
