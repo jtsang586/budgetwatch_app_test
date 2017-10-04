@@ -2,8 +2,8 @@ Given(/^I can open the app$/) do
   mainpage.main_page_displayed?
 end
 
-When(/^click on budget$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+When(/^I click on budget$/) do
+  mainpage.view_budgets
 end
 
 Then(/^the budget page opens$/) do

@@ -3,7 +3,7 @@ Feature: I am able to add a budget
 
   Scenario: I am able to open the app
     Given I can open the app
-    When click on budget
+    When I click on budget
     Then the budget page opens
 
   Scenario: I am able to add a budget
