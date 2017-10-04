@@ -1,15 +1,11 @@
-Given(/^I have the app open$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-And(/^I am on the main page$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+Given(/^I am on the main page$/) do
+  mainpage.main_page_displayed?
 end
 
 When(/^I click on budgets$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  mainpage.view_budgets
 end
 
 Then(/^My budgets are displayed$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(budgetpage.budget_page_displayed?.length).to be > 0
 end

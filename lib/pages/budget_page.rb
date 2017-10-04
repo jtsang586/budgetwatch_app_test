@@ -9,6 +9,10 @@ class BudgetPage
     @driver = driver
   end
 
+  def budget_page_displayed?
+    @driver.find_elements(:id, TOTAL_BUDGETS_ID)
+  end
+
   def set_dates
     @driver.find_element(:id, SET_DATE_ID).click
   end
