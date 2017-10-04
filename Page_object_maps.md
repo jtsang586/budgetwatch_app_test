@@ -1,6 +1,6 @@
 ##Page Objects
 
-###Main Page Objects
+#####Main Page Objects
 Settings - ID
 
 Import/Export - ID
@@ -14,7 +14,7 @@ Budgets - Budgets and Transactions - ID[0]
 
 Transactions - Budgets and Transactions - ID[1]
 
-###Budgets Page Objects
+#####Budgets Page Objects
 Set Dates - Class[0]
 
 Add Budget - ID
