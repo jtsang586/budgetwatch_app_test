@@ -10,7 +10,7 @@ class BudgetPage
   end
 
   def budget_page_displayed?
-    @driver.find_elements(:id, TOTAL_BUDGETS_ID)
+    @driver.find_elements(:id, BUDGET_NAME_ID)
   end
 
   def set_dates
@@ -19,10 +19,6 @@ class BudgetPage
 
   def add_budget
     @driver.find_element(:id, ADD_ID).click
-  end
-
-  def budget_page_displayed?
-    @driver.find_element(:id, ADD_ID)
   end
 
   def get_budget_name
