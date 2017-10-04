@@ -3,6 +3,10 @@ Given(/^I am on the budget page$/) do
 end
 
 And(/^A budget is displayed$/) do
+  budgetpage.add_budget
+  addbudgetpage.input_name('Test 1')
+  addbudgetpage.input_value(1000)
+  addbudgetpage.save_budget
   expect(budgetpage.budget_page_displayed?.length).to be > 1
 end
 
@@ -11,5 +15,5 @@ When(/^I click on the budget$/) do
 end
 
 Then(/^I am taken to the transaction page$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(transactionspage.transactions_page_is_displayed).to eq('Transactions')
 end
